@@ -6,5 +6,6 @@ public class IntegerPractice {
 		Integer i2 = 4;
 		System.out.println(Integer.bitCount(3));
 		System.out.println(i1.byteValue());
+		
 	}
 }
