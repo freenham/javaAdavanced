@@ -1,22 +1,27 @@
 package javaAdvanced;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class ListExam {
+public class ListExam{
+  public List<String> addArray(String[]arr1, String[]arr2){
+    List<String> list = new ArrayList<String>();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		List<String> list = new ArrayList<>();
-		list.add("kim");
-		list.add("kang");
-		list.add("kim");
-		
-		System.out.println(list.size());
-		
-		for(int i = 0;i<list.size();i++) {
-			System.out.println(list.get(i));
-		}
-	}
+    for(String str : arr1){
+      System.out.println(str);     
+    }
 
+    for(String str : arr2){
+      System.out.println(str);
+    }
+    
+
+    return list;
+  }
+
+  public static void main(String[] args){
+	  String[] arr1 = {"a","b"};
+	  String[] arr2 = {"d","e","f"};
+	  ListExam le = new ListExam();
+      le.addArray(arr1,arr2);
+  }
 }
